@@ -11,10 +11,14 @@ Decide how to interact with BinanceChain:
 |LightClient |Useful for deeper analysis 0f BinanceChain with only about 50mb of space required. |Small server (1gb/25gb) | 
 |Full Node |Required to host the full chain. As as at date, testnet uses 6GB. |Medium server (16gb/320gb)| 
 
+
 Create a new instance to host the Binance CLI client.
+
 Chosen: **Ubuntu 16.04.6 x64 1gb/25gb DigitalOcean VPS**
 
+
 Note the DEX and data-seed nodes:
+
 https://testnet-dex.binance.org/api/v1/peers
 ```
 https://testnet-dex.binance.org:443
@@ -25,8 +29,24 @@ https://seed-pre-s3.binance.org:443
 ```
 *You should connect to one of the data-seed nodes*
 
-Note the ChainID to use: https://docs.binance.org/api-reference/cli.html#which-chain-id-to-use
+
+Note testnet fees:
+
+https://testnet-dex.binance.org/api/v1/fees
+
+
+Mainnet Fees:
+
+https://docs.binance.org/trading-spec.html#current-fees-table-on-mainnet
+
+
+
+Note the ChainID to use: 
+
+https://docs.binance.org/api-reference/cli.html#which-chain-id-to-use
+
 Testnet: `Binance-Chain-Nile`
+
 Mainnet: `Binance-Chain-Tigris`
 
 ## Run the CLI
@@ -52,7 +72,7 @@ Create three testnet accounts:
 ./tbnbcli keys add test_acc3
 ```
 
-Get tBNB tokens (3 x 200BNB required): 
+Get tBNB tokens (5 x 200BNB required): 
 https://www.binance.com/en/dex/testnet/address
 
 Query your own balance:
