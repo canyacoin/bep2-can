@@ -84,8 +84,10 @@ Practise freezing some:
 ./tbnbcli token freeze --amount 33300000000 --symbol XXX-XXX --from test_acc1 --chain-id=Binance-Chain-Nile --node=data-seed-pre-2-s1.binance.org:80 --trust-node
 ```
 
-## Submit a listing proposeal
+## Submit a listing proposal
 Reference: https://docs.binance.org/governance.html
+
+Requires: 800BNB
 
 Create a listing proposal. 
 ```
