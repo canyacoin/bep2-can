@@ -103,3 +103,4 @@ Once voted by Binance validators, then submit a listing transaction:
 ```
 ./tbnbcli dex list -s XXX-XXX --quote-asset-symbol BNB --from test_acc1 —init-price 100000000 --proposal-id XXX --chain-id=Binance-Chain-Nile --node=data-seed-pre-2-s1.binance.org:80 --json
 ```
+https://docs.binance.org/list.html
