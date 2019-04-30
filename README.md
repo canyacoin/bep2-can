@@ -64,7 +64,7 @@ Send enough of your test BNB to a single account:
 ```
 ./tbnbcli send --chain-id=Binance-Chain-Nile --from=test_acc2 --amount=10000000000:BNB --to=tbnb1xxxx
 ```
-*note: 100000000:BNB is equal to 1 BNB (8 decimal places)
+*note: 100000000:BNB is equal to 1 BNB (8 decimal places)*
 
 ## Creating Tokens
 Reference: https://docs.binance.org/tokens.html
