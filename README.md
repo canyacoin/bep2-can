@@ -57,9 +57,11 @@ Get the binary:
 git clone https://github.com/binance-chain/node-binary.git
 ```
 
-Get on to CLI (testnet v0.5.8)
+Get on to CLI (testnet v0.5.8.1)
+Note: 0.5.8.1 fixed the Ledger bug. 
+
 ```
-cd node-binary/cli/testnet/0.5.8/linux
+cd node-binary/cli/testnet/0.5.8.1/linux
 ```
 
 ## Getting and Sending tBNB
@@ -124,3 +126,28 @@ Once voted by Binance validators, then submit a listing transaction:
 ./tbnbcli dex list -s XXX-XXX --quote-asset-symbol BNB --from test_acc1 —init-price 100000000 --proposal-id XXX --chain-id=Binance-Chain-Nile --node=data-seed-pre-2-s1.binance.org:80 --json
 ```
 https://docs.binance.org/list.html
+
+## Using the Tool
+
+Navigate to `node-binary/tools` and locate the `issue.sh` and `propose.sh` bash scripts.
+
+Copy in the `0.5.8.1` `tbnbcli` and `bnbcli` files to this directory
+
+```
+cp $HOME/node-binary/cli/testnet/0.5.8.1/mac/tbnbcli $HOME/node-binary/tools/tbnbcli
+cp $HOME/node-binary/cli/prod/0.5.8.1/mac/bnbcli $HOME/node-binary/tools/bnbcli
+```
+
+Connect and create a Ledger Key:
+```
+./bnbcli keys add ledger_key --ledger
+```
+
+Start the script:
+```
+bash issue.sh
+```
+
+Follow the script guide. 
+
+
