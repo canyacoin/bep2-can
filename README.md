@@ -1,4 +1,8 @@
 # bep2-can
+
+This repo is mirrored from the Gitlab primary repository:
+https://gitlab.com/canyacoin/binancechain/bep2-can
+
 Repository to cover the listing of CAN on BinanceChain
 
 
